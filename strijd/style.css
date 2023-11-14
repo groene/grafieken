@@ -1,0 +1,158 @@
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  padding: 5em 1em 1em 1em;
+  font-family: 'acumin-pro-semi-condensed', sans-serif;
+  font-size: 19px;
+  border-radius: 5px;
+  color: black;
+  border-width:2px;
+  font-weight:bold;
+  cursor: inherit;
+  line-height: inherit;
+  line-height: inherit;
+}
+
+
+.chart-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+/* Common styles for chart-container, title-container, and explaining-text */
+#chart-container, #title-container, #explaining-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Tooltip styles */
+.tooltip-box {
+  fill: #fff;
+  stroke: #333;
+  stroke-width: 0px;
+}
+
+.tooltip-text {
+  fill: #333;
+}
+
+/* SVG styles */
+svg {
+  font: 10px sans-serif;
+}
+
+.x.axis .domain {
+  fill: 'none';
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/* Text styles */
+text, p, text-title, foot-note {
+  font-family: 'acumin-pro-semi-condensed', sans-serif;
+}
+
+text {
+  font-size: 14px;
+}
+
+text-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+}
+
+foot-note {
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+/* Heading styles */
+h1, h3 {
+  font-family: 'acumin-pro-semi-condensed', sans-serif;
+  line-height: 26px;
+}
+
+h1 {
+  font-size: 21px;
+}
+
+h2 {
+  font-family: 'acumin-pro-semi-bold', sans-serif;
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/* Button styles within #controls */
+#controls .party-button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#controls .party-button .party-line {
+  display: inline-block;
+  width: 0px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#controls .party-button .close-btn {
+  font-size: 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#controls .party-button .close-btn:hover {
+  color: #ff0000;
+}
+
+.party-button.active {
+  opacity: 1;
+}
+
+.party-button:hover {
+  opacity: 0.8;
+}
+
+.party-button.inactive {
+  opacity: 0.3;
+  background-color: #ccc;
+}
+
+/* Tooltip positioning and styling */
+.tooltip {
+  position: absolute;
+  font-family: 'acumin-pro-semi-condensed', sans-serif;
+  text-align: left;
+  width: auto;
+  padding: 3px;
+  font-size: 12px;
+  background: white;
+  border: 1px solid #666;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0s;
+}
+
+/* Hover effects */
+.bar:hover, .party-button:hover {
+  opacity: 0.8;
+}

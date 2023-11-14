@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+<head>
+
+  <title>Woorden</title>
+
+
+</head>
+<body>
+
+<div id="title-container">
+  
+ <div id="title">
+ <div id="selections">
+  <text-title for="partyDropdown">De meest onderscheidende woorden van</text-title>
+  <select id="partyDropdown" style="background-color:#ffdbc4; border-color:#BE4F00">
+    <!-- Options will be populated by D3.js -->
+  </select>
+
+  <text-title for="topicDropdown">op het onderwerp</text-title>
+  <select id="topicDropdown"  style="background-color:#ffd9da; border-color:#e30b1b">
+    <!-- Options will be populated by D3.js -->
+  </select>
+</div>
+
+</div>
+ <h3 style="margin-top: 0;"></h3>
+
+</div>
+
+<div id="word-graph" class="chart-container"></div>
+<div id="explaining-text"><foot-note>Deze grafiek toont welke woorden significant <strong>vaker</strong> voorkomen in een bepaald verkiezingsprogramma ten opzichte van andere rechtse partijprogramma's van dat jaar. Alleen bijvoeglijke of zelfstandige naamwoorden zijn meegenomen in deze analyse, en woorden die minder dan vijf keer voorkomen zijn eruit gefilterd.</foot-note></div>
+<script src=woorden.js></script>
+
+
+</body>
+</html>
